@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova+SC:ital,wght@0,400;0,700;1,400&family=Inconsolata:wght@200..900&family=Playwrite+CU:wght@100..400&family=Sevillana&family=Ysabeau+SC:wght@1..1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inconsolata", monospace;
+}
+:root{
+    --cor000: #000001;
+    --cor001: #01021a;
+    --cor002: #795dff;
+    --cor003: #b627d4;
+    --cor004: #00aeef; 
+
+}
+h2.titulo{
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+body{
+    background-color:var(--cor001);
+    height: 100vh;
+}
+/* Parte de Navegação - Inicio*/
+.interface{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.flex{
+    display: flex;
+
+}
+header{
+    padding: 40px 4%;
+}
+header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header li a{
+    color: var(--cor003);
+    text-decoration: none;
+    font-size: 20px;
+    transition: transform 0.1s;
+}
+header li a :hover{
+    transform: scale(2.0);
+    color: #fff;
+}
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+
+}
+header .botao-contato button{
+    display: flex;
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color:var(--cor003);
+    border-radius: 40px;
+    cursor: pointer;
+    transition: transform 0.5s;
+
+}
+.botao-contato :hover{
+     background: #9514af;
+     color: #fff;
+     transform: scale(1.1);
+}
+/* Parte de Navegação - Fim*/
+/*Estilo do topo do site*/
+section.topo{
+    padding: 40px  4%;
+}
+section.topo.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px; /*gap é uma forma de colocar um espaçamento pré definido em todos os elementos de um container*/
+    
+}
+.topo h1{
+    
+    color: #fff;
+    font-size: 38px;
+    padding-top:5%;
+    line-height: 40px;
+}
+.topo p{
+    color: #fff;
+    margin:40px 0;
+    font-size: 20px;
+    padding-right: 10%;
+    text-align: justify;
+}
+.topo img{
+    border-radius: 50%;
+    border: 5px  solid var(--cor003);
+}
+/*Estilo do topo do site - Fim*/
+.topo .img-topo img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+/*animação*/
+@keyframes flutuar{
+    0%{
+        top:0;
+    }
+    100%{
+        top:30px;
+    }
+}
+/*animação - Fim*/
+/*Seção minhas habilidades*/
+section.habilidades{
+    padding: 40px 4%;
+
+}
+section.habilidades .flex{
+    gap: 60px;
+}
+.habilidades .habilidades-box{
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    border: 2px solid var(--cor003);
+    margin-top: 45px;
+    transition: transform .2s;
+}
+.habilidades .habilidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #b727d47e;
+}
+
+.habilidades .habilidades-box i{
+    font-size: 70px;
+    color: var(--cor003);
+}
+.habilidades .habilidades-box h3{
+    font-size: 28px;
+    margin: 15px 0;
+}
+/*Seção minhas habilidades -- Fim*/
+/*Sobre mim*/
+section .sobre-mim{
+    padding: 40px 4%;
+}
+section.sobre-mim .flex{
+    align-items: center;
+    gap: 60px;
+}
+.sobre-mim .txt-sobre{
+    color: #fff;
+
+}
+.sobre-mim .txt-sobre h2{
+    font-size: 30px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+.sobre-mim .txt-sobre h2 span{
+    color: var(--cor003);
+    font-size: 45px;
+}
+.sobre-mim .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+.sobre-mim .txt-sobre h3{
+    font-size: 20px;
+    text-align: justify;
+    margin: 20px 0;
+}
+.sobre-mim .txt-sobre .botao-rede-social button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--cor003);
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 10px;
+    transition: transform 1s;
+    margin: 40px 0;
+
+}
+.sobre-mim .txt-sobre .botao-rede-social button:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #b727d47e;
+}
+/*Sobre mim -- Fim*/
+/*Footer*/
+footer{
+    padding: 60ps 4%;
+    box-shadow: 0 0 40px 10px #ffffff1f;
+}
+footer .linha-footer .bloco-logo img{
+    display: flex;
+}
+
+/*Footer - Fim*/
