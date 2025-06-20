@@ -55,7 +55,7 @@ header nav ul li{
     padding: 0 40px;
 
 }
-header .botao-contato button{
+.botao-contato button{
     display: flex;
     padding: 10px 40px;
     font-size: 18px;
@@ -64,6 +64,7 @@ header .botao-contato button{
     border-radius: 40px;
     cursor: pointer;
     transition: transform 0.5s;
+    text-decoration: none;
 
 }
 .botao-contato :hover{
@@ -194,6 +195,21 @@ section.sobre-mim .flex{
     box-shadow: 0 0 20px #b727d47e;
 }
 /*Sobre mim -- Fim*/
+/*Meu portifólio*/
+section.portifolio{
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff1d;
+}
+section.portifolio .flex{
+    justify-content: space-around;
+     
+}
+.img-portifolio{
+    width: 360px;
+    height: 460px;
+    background-color: #b627d4;
+
+}/*Meu portifólio -- Fim*/
 /*Footer*/
 footer{
     padding: 60ps 4%;
