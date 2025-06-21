@@ -148,6 +148,12 @@ section.habilidades .flex{
     font-size: 28px;
     margin: 15px 0;
 }
+.habilidades .habilidades-box p{
+    transition: .5s;
+}
+.habilidades .habilidades-box p:hover{
+    color: var(--cor003);
+}
 /*Seção minhas habilidades -- Fim*/
 /*Sobre mim*/
 section .sobre-mim{
@@ -245,12 +251,111 @@ section.portifolio .flex{
 
 /*Meu portifólio -- Fim*/
 /*Footer*/
-footer{
-    padding: 60ps 4%;
-    box-shadow: 0 0 40px 10px #ffffff1f;
-}
-footer .linha-footer .bloco-logo img{
-    display: flex;
+footer {
+  padding: 30px 4%;
+  background-color: var(--cor001);
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 0 40px 10px #ffffff1f;
 }
 
-/*Footer - Fim*/
+footer .interface {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+footer .linha-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+footer .bloco-logo img {
+  width: 60px;
+  height: auto;
+}
+
+footer .botao-rede-social {
+  display: flex;
+  gap: 15px;
+}
+
+footer .botao-rede-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--cor003);
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  font-size: 18px;
+  transition: transform 0.3s ease;
+  text-decoration: none;
+}
+
+footer .botao-rede-social a:hover {
+  transform: scale(1.1);
+  background-color: #9514af;
+}
+
+footer .linha-footer p {
+  font-size: 14px;
+  margin: 5px 10px;
+}
+
+footer .linha-footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer .linha-footer a:hover {
+  text-decoration: underline;
+}
+@media screen and (max-width: 768px) {
+    .flex {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    header nav ul li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    .topo .img-topo img {
+        width: 250px;
+        height: 250px;
+    }
+
+    .habilidades .habilidades-box {
+        width: 100%;
+    }
+
+    .img-portifolio {
+        width: 100%;
+        height: 300px;
+        margin-bottom: 30px;
+    }
+
+    .sobre-mim .txt-sobre h2 span {
+        font-size: 30px;
+    }
+
+    .sobre-mim .txt-sobre .botao-rede-social {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer .linha-footer {
+        flex-direction: column;
+        gap: 15px;
+    }
+}
