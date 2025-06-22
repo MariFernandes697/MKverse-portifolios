@@ -330,7 +330,9 @@ footer .linha-footer a:hover {
     header nav ul li {
         display: none;
     }
-
+    .botao-contato #sobre{
+        display: none;
+    }
     .topo .img-topo img {
         width: 250px;
         height: 250px;
