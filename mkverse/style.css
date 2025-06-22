@@ -325,8 +325,7 @@ footer .linha-footer a:hover {
     }
 
     header nav ul li {
-        display: block;
-        padding: 10px 0;
+        display: none;
     }
 
     .topo .img-topo img {
